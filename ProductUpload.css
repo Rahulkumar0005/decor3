@@ -1,0 +1,103 @@
+.product-upload-page{
+    background-color: rgb(156, 11, 11);
+}
+.product-upload-left{
+    background-color: rgb(248, 248, 248);
+    padding: 20px;
+    margin-right:28%;
+    margin-left: 7%;
+    
+    height: 100%;
+    bottom: 0px;
+    padding-bottom: 280px;
+    margin-bottom: 50px;
+}
+.product-upload-head{
+    margin-left: 10px;
+    height: 70px;
+    width: 100%;
+    background-color: rgba(46, 3, 3, 0.037);
+}
+.product-upload-line{
+    display: flex;
+    padding-top: 1px;
+    width: 100%;
+    margin: 1px;
+    background-color: rgba(0, 0, 0, 0.078);
+}
+
+.product-upload-head input{
+    height: 15px;
+    margin-top: 15px;
+    margin-left: -440px;
+    margin-right: -400px;
+}
+
+.product-upload-head p{
+    margin-top: -25px;
+    margin-left: 50px;
+}
+.upload-weight{
+    width: 100%;
+    margin-top: 1%;
+    display:flex;
+}
+.product-size-inventory input,select{
+      width: 60%;
+      height: 40px;
+      
+}
+.upload-weight i{
+    margin: 3%;
+    margin-top: 3.25%;
+}
+
+.Invenyory .product-size-inventory{
+    float: left;
+    width: 470px;
+    
+}
+.Invenyory{
+    margin-right: -10px;
+}
+.Invenyory .head{
+    margin-top: 2%;
+}
+
+
+.product-upload-footer{
+    height: 8%;
+    width: 80%;
+    background-color: rgb(248, 248, 248);
+    position: fixed;
+    display: block;
+    bottom: 0px;
+    margin-left: 7%;
+    padding-top: 10px;
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+}
+.product-upload-footer button{
+    width: 18%;
+    margin-left: 20px;
+    background-color: rgba(240, 248, 255, 0.616);
+    color: black;
+    margin-top: -5px;
+    height: 30px;
+    padding-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    font-size: 15px;
+    font-weight: bold;
+}
+.product-upload-footer>.upload-save{
+    margin-left: 41%;
+    color: white;
+    background-color: aqua;
+}
+.product-upload-footer>.upload-submit{
+    
+    color: white;
+    background-color: aqua;
+}
+

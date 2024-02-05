@@ -1,0 +1,149 @@
+/* LoginPage.css */
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://assets-news.housing.com/news/wp-content/uploads/2021/12/23132907/Designer-home-decor-Home-decorating-tips-and-interior-design-ideas-FB-1200x700-compressed.jpg') center/cover no-repeat;
+  overflow: hidden;
+}
+
+.login-form-container {
+  width: 300px;
+  padding: 20px;
+  padding-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.login-form {
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.loginpage .label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #3e3d3d;
+  /* text-align: center; */
+}
+
+/* .input-group {
+  display: flex;
+  align-items: center;
+} */
+
+.login-button,
+.signup-button {
+  margin-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+
+}
+
+.button-container {
+  margin-left: 45px;
+}
+
+.loginpage .fa-user-plus {
+  font-size: small;
+  margin-left: 5px;
+}
+
+.form-options .tick {
+  float: left;
+}
+
+.loginpage .box {
+  margin-left: 70px;
+}
+
+#rememberMe {
+  margin-right: 10px;
+
+}
+
+.loginpage .loginforgot {
+  margin-left: 70px;
+  text-decoration: underline;
+}
+
+.loginpage h2 {
+  text-align: center;
+}
+
+/* Eye icon */
+
+.loginpage .input1{
+  position: relative;
+}
+.loginpage .show{
+  display: block;
+}
+.loginpage .not-show{
+  display: none;
+  height: 0px;
+  width: 0px;
+}
+#eyeicon{
+  position: absolute;
+  top: 20px;
+  bottom: 0px;
+  cursor: 'pointer';
+  width: 20px;
+  height: 20px;
+  z-index: 2px;
+  left: 85%;
+}
+
+
+/*  */
+ 
+ .loginpage label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+ .loginpage input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  transition: border-color 0.3s ease;
+}
+
+ .loginpage input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+ .loginpage button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+ .loginpage button:hover {
+  background-color: #0056b3;
+}
+
+ 
+

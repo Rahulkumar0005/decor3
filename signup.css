@@ -1,0 +1,69 @@
+/* SignupPage.css */
+
+.signup-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff8e;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    
+  }
+  .signupbackground{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('C:\Users\RINKU SINGH\OneDrive\DecorHomesMyWebsite\decorhome\public/images\loginbackground.jpg') center/cover no-repeat;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .signupbackground label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .signupbackground input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .signupbackground input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .signupbackground button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signupbackground button:hover {
+    background-color: #0056b3;
+  }
+  
+  .signupbackground .error-message {
+    color: #ff0000;
+    margin-top: 10px;
+  }
+  

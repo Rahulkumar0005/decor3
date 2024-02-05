@@ -1,0 +1,295 @@
+.buysection-contain {
+  margin-top: 4.2%;
+  margin-bottom: 2%;
+}
+
+.buysection-contain .product-details {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* Product images */
+.buysection-contain .product-images {
+  width: 60%;
+  margin-right: 20px;
+  
+}
+
+.buysection-contain .big-image {
+  width: 60%;
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin-top: -21px;
+  margin-bottom: 8px;
+  margin-left: 40%;
+}
+
+.buysection-contain .small-images {
+  display: grid;
+  justify-content: space-between;
+  margin-top: -80.5%;
+}
+
+.buysection-contain .small-image {
+  height: 109px;
+  width: 90px;
+  margin-left: 220%;
+  margin-bottom: 20px;
+}
+
+.buysection-contain .small-image:hover {
+  transform: scale(1.02);
+}
+
+/* Product info */
+.buysection-contain .product-info {
+ 
+  width: 50%;
+  margin-top: -23px;
+}
+
+.buysection-contain .product-info .checkfordelivery {
+  margin-top: 30px;
+  margin-bottom: -10px;
+  font-size: medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buysection-contain .product-info .product-heart {
+  font-size: x-large;
+  width: 26px;
+  float: left;
+  margin-top: -50px;
+  margin-left: 400px;
+}
+
+
+
+.buysection-contain .product-info .fill {
+  color: red;
+}
+.buysection-contain .product-info .notfill {
+  color: black;
+}
+
+
+.buysection-contain .product-name {
+  margin-left:5px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.buysection-contain .product-info .product-name .fa-heart{
+
+}
+
+.buysection-contain .product-description {
+  margin-bottom: 15px;
+  font-size: medium;
+}
+
+.buysection-contain .price,
+.customer-rating,
+.delivery-location {
+  margin-bottom: 10px;
+}
+
+.buysection-contain .price .product-price {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.buysection-contain .action-buttons {
+  display: flex;
+  margin-top: 40px;
+}
+
+.buysection-contain .add-to-cart,
+.buysection-contain .buy-now {
+  width: 30%;
+  height: 50px;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  color: black;
+  background-color: whitesmoke;
+  cursor: pointer;
+  font-size: large;
+
+}
+
+.buysection-contain .add-to-cart:hover,
+.buysection-contain .buy-now:hover {
+  color: white;
+  background-color: black;
+}
+
+.buysection-contain .pincode-check {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-left: -20px;
+}
+
+.buysection-contain input[type="text"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 20%;
+}
+
+
+.buysection-contain .pincode-check button {
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  height: 43px;
+  border-radius: 3px;
+  margin-left: 165px;
+  margin-top: -53px;
+}
+
+.buysection-contain .pincode-check .pincode-result {
+  
+  margin-left: 200%;
+}
+
+.buysection-contain .line-between {
+  border-bottom: 1px solid #0000008c;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  width: 62%;
+  opacity: 0.3;
+}
+
+.buysection-contain .offers {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buysection-contain .offers p{
+  font-size: smaller;
+  margin-left: 24px;
+  margin-top: -5px;
+  opacity: 0.7;
+}
+
+.buysection-contain .offers .fa-plus {
+  margin-left: 400px;
+  margin-bottom: 10px;
+}
+
+.buysection-contain .return-policy {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buysection-contain .return-policy p{
+  font-size: smaller;
+  margin-left: 24px;
+  margin-top: -5px;
+  opacity: 0.7;
+}
+
+.buysection-contain .return-policy .fa-plus {
+  margin-left: 310px;
+  margin-bottom: 10px;
+}
+
+.buysection-contain .payment-mode {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 7px;
+}
+
+.buysection-contain .payment-mode p{
+  font-size: smaller;
+  margin-left: 16px;
+  margin-top: -5px;
+  opacity: 0.7;
+}
+
+.buysection-contain .payment-mode .fa-plus {
+  margin-left: 330px;
+  margin-bottom: 10px;
+}
+
+.buysection-contain .quantity-bar {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  max-width: 150px;
+  border: 1px solid #ccc;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.buysection-contain .qty {
+  margin-top: 0px;
+  margin-bottom: -35px;
+  font-size: medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buysection-contain .quantity-minus {
+  padding: 10px;
+  cursor: pointer;
+  width: 33%;
+  height: 50px;
+  font-size: xx-large;
+  margin-left: 10px;
+  margin-top: -24px;
+}
+
+.buysection-contain .quantity-plus {
+  padding: 10px;
+  cursor: pointer;
+  width: 33%;
+  height: 50px;
+  font-size: x-large;
+  margin-left: 5px;
+  margin-top: -8px;
+  margin-right: 10px;
+}
+
+.buysection-contain .quantity-input {
+  width: 50px;
+  text-align: center;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-top: 0px;
+  margin-left: 7px;
+}
+
+.buysection-contain .quantity-input::-webkit-inner-spin-button,
+.buysection-contain .quantity-input::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.buysection-contain .product-info .desc{
+  margin-left: 260px;
+  width: 300px;
+  margin-top: -85px;
+}
+
+.buysection-contain .product-info .desc .pd{
+  font-size: medium;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.buysection-contain .product-info .desc p{
+  margin-top: -15px;
+  font-size: small;
+}
+.hide{
+  
+  display: none;
+}
