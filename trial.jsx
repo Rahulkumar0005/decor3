@@ -1,42 +1,66 @@
 import React, { useState } from 'react';
+import './trial.css';
 
-const Trial = () => {
-  const [selectedFile, setSelectedFile] = useState(null);
-  const [imagePreview, setImagePreview] = useState(null);
+const ZoomedImage = ({ src }) => {
+  const [zoomed, setZoomed] = useState(false);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  const handleFileChange = (event) => {
-    const file = event.target.files[0];
-
-    // Update the state with the selected file
-    setSelectedFile(file);
-
-    // Display a preview of the selected image
-    const reader = new FileReader();
-    reader.onloadend = () => {
-      setImagePreview(reader.result);
-    };
-    reader.readAsDataURL(file);
+  const handleMouseEnter = (e) => {
+    setZoomed(true);
+    setPosition({ x: e.nativeEvent.offsetX, y: e.nativeEvent.offsetY });
   };
 
-  const handleUpload = () => {
-    if (selectedFile) {
-      // Create FormData object
-      const formData = new FormData();
-
-      // Append the file to the FormData object
-      formData.append('image', selectedFile, selectedFile.name);
-
-      // Now you can send the formData to your server using a library like Axios or fetch
-      // For this example, let's just log the FormData object
-      console.log(formData);
-    }
+  const handleMouseLeave = () => {
+    setZoomed(false);
   };
 
   return (
+    <div style={{ position: 'relative', display: 'inline-block' }}>
+      <img
+        src={src}
+        alt="Main Image"
+        style={{ width: '400px', height: 'auto', display: 'block' }}
+        onMouseEnter={handleMouseEnter}
+        onMouseMove={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      />
+      {zoomed && (
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: '100%',
+            marginLeft: '20px', // Adjust the distance from the main image
+            width: '800px', // Adjust the size of the zoomed image container
+            height: '400px', // Adjust the size of the zoomed image container
+            overflow: 'hidden',
+            border: '1px solid #ccc', // Optional: Add border for better visualization
+          }}
+        >
+          <img
+            src={src}
+            alt="Zoomed Image"
+            style={{
+              width: '800px', // Adjust the width of the zoomed-in part
+              height: 'auto',
+              transformOrigin: `${position.x}px ${position.y}px`,
+              transform: 'scale(2)', // Adjust the scale factor for zooming
+              marginLeft: `${-position.x * 2 + 100}px`, // Adjust the position of the zoomed part
+              marginTop: `${-position.y * 2 + 100}px`, // Adjust the position of the zoomed part
+            }}
+          />
+        </div>
+      )}
+    </div>
+  );
+};
+
+// Usage
+const Trial = () => {
+  return (
     <div>
-      <input type="file" onChange={handleFileChange} />
-      {imagePreview && <img src={imagePreview} alt="Preview" style={{ maxWidth: '100%', maxHeight: '200px' }} />}
-      <button onClick={handleUpload}>Upload</button>
+      <h2>Hover to Zoom Image</h2>
+      <ZoomedImage src="https://images.bewakoof.com/t1080/men-s-black-snoopy-vibes-graphic-printed-oversized-t-shirt-633742-1711481910-1.jpg" /> {/* Path to the main image */}
     </div>
   );
 };
